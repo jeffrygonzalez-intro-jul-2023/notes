@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-07-17.md",
+                "file": "Stuff I Need To Learn About.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-07-17.md"
+                "file": "Stuff I Need To Learn About.md"
               }
             }
           }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-07-17.md",
+                "file": "Stuff I Need To Learn About.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-07-17.md",
+                "file": "Stuff I Need To Learn About.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,8 +169,13 @@
   },
   "active": "1f253b8f8e446eb9",
   "lastOpenFiles": [
-    "Resources.md",
     "2023-07-17.md",
+    "Stuff I Need To Learn About.md",
+    "Questions.md",
+    "DaisyUI.md",
+    "Angular.md",
+    "Resources.md",
+    "Tailwind.md",
     "2023-07-16.md"
   ]
 }
