@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of list">
+    <span
+    [ngClass]="{completed: item.isComplete}"
+    >{{ item.description }}</span>
+
+    <button *ngIf="item.isComplete === false">X</button>
+  </li>
+</ul>

@@ -1,0 +1,18 @@
+<p>This is the {{title.toUpperCase()}}</p>
+<p>2 plus 2 is {{ 2 + 2}}</p>
+<ul>
+    <li *ngFor="let friend of friends">
+        {{friend}}
+        <div *ngIf="friend.length > 5">
+            That friend has a long name!
+        </div>
+
+        <button (click)="unFriend(friend)">Unfriend</button>
+
+    </li>
+
+    <section>
+        <input #thingy type="text">
+        <button (click)="addFriend(thingy)">Add Friend</button>
+    </section>
+</ul>
