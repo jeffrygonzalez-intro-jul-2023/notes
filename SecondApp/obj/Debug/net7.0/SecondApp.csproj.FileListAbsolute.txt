@@ -1,0 +1,15 @@
+C:\Users\ITUStudent\dev\course-materials\SecondApp\bin\Debug\net7.0\SecondApp.exe
+C:\Users\ITUStudent\dev\course-materials\SecondApp\bin\Debug\net7.0\SecondApp.deps.json
+C:\Users\ITUStudent\dev\course-materials\SecondApp\bin\Debug\net7.0\SecondApp.runtimeconfig.json
+C:\Users\ITUStudent\dev\course-materials\SecondApp\bin\Debug\net7.0\SecondApp.dll
+C:\Users\ITUStudent\dev\course-materials\SecondApp\bin\Debug\net7.0\SecondApp.pdb
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.csproj.AssemblyReference.cache
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.AssemblyInfoInputs.cache
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.AssemblyInfo.cs
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.csproj.CoreCompileInputs.cache
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.dll
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\refint\SecondApp.dll
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.pdb
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\SecondApp.genruntimeconfig.cache
+C:\Users\ITUStudent\dev\course-materials\SecondApp\obj\Debug\net7.0\ref\SecondApp.dll
