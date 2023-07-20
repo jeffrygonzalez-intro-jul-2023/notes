@@ -18,4 +18,30 @@ public class MakingWithdrawals
         Assert.Equal(openingBalance - amountToWithdraw,
             account.GetBalance());
     }
+
+    [Fact]
+    public void CanTakeEntireBalance()
+    {
+        var account = new BankAccount();
+
+        account.Withdraw(account.GetBalance());
+
+        Assert.Equal(0, account.GetBalance());
+    }
+
+    [Theory]
+    [InlineData(-0.1)]
+    [InlineData(0)]
+    public void InvalidAmountsAreNotAllowed(decimal amount)
+    {
+        var account = new BankAccount();
+        var openingBalance = account.GetBalance();
+        Assert.Throws<InvalidBankAccountTransactionAmountException>(() =>
+        {
+            account.Withdraw(amount);
+        });
+
+        Assert.Equal(openingBalance, account.GetBalance());
+    }
+
 }

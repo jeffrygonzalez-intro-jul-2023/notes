@@ -22,7 +22,7 @@ public class MakingDeposits
             , account.GetBalance());
     }
 
-    [Fact]
+    [Fact(Skip = "just a demo")]
     public void Demo()
     {
         var jcAccount = new BankAccount();
