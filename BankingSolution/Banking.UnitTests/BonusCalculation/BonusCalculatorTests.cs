@@ -11,7 +11,9 @@ public class BonusCalculatorTests
     [InlineData(200, 20)]
     public void HasSufficientBalance(decimal amountOfDeposit, decimal expectedBonus)
     {
-        var bonusCalculator = new StandardBonusCalculator();
+        var duringBusinessHourClock = new Mock<IProvideTheBusinessClock>();
+        duringBusinessHourClock.Setup(c => c.IsDuringBusinessHours()).Returns(true);
+        var bonusCalculator = new StandardBonusCalculator(duringBusinessHourClock.Object);
        
         var balanceOnAccount = 6000M;
 
@@ -25,7 +27,9 @@ public class BonusCalculatorTests
     [InlineData(200, 0)]
     public void HasInsufficientBalance(decimal amountOfDeposit, decimal expectedBonus)
     {
-        var bonusCalculator = new StandardBonusCalculator();
+        var duringBusinessHourClock = new Mock<IProvideTheBusinessClock>();
+        duringBusinessHourClock.Setup(c => c.IsDuringBusinessHours()).Returns(true);
+        var bonusCalculator = new StandardBonusCalculator(duringBusinessHourClock.Object);
 
         var balanceOnAccount = 5999.99M;
 
@@ -33,5 +37,20 @@ public class BonusCalculatorTests
 
         Assert.Equal(expectedBonus, bonus);
     }
+
+   
+
+    [Fact]
+    public void BonusIsHalfOutsideBusinessHours()
+    {
+        var duringBusinessHourClock = new Mock<IProvideTheBusinessClock>();
+        duringBusinessHourClock.Setup(c => c.IsDuringBusinessHours()).Returns(false);
+        var bonusCalculator = new StandardBonusCalculator(duringBusinessHourClock.Object);
+
+        var bonus = bonusCalculator.CalculateBonusForDeposit(6000, 100);
+
+        Assert.Equal(5M, bonus);
+    }
+
 
 }

@@ -14,7 +14,7 @@ public class NewAccounts
         // called account
 
         
-        var account = new BankAccount();
+        var account = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
 
         //account._balance = 100_000;
 

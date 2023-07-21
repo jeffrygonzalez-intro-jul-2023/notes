@@ -1,5 +1,6 @@
 ﻿
 using Banking.Domain;
+using System.Reflection;
 
 namespace Banking.UnitTests.BankAccounts;
 
@@ -10,7 +11,7 @@ public class MakingDeposits
     public void DepositsIncreaseTheBalance()
     {
         // Given - Arrange
-        var account = new BankAccount();
+        var account = new BankAccount(new Mock<ICanCalculateBonusesForBankAccountDeposits>().Object);
         var openingBalance = account.GetBalance();
         var amountToDeposit = 100.23M;
 
@@ -18,22 +19,17 @@ public class MakingDeposits
         account.Deposit(amountToDeposit); 
 
         // Then - Assert
-        Assert.Equal(5110.2530M, account.GetBalance());
+        Assert.Equal(openingBalance + amountToDeposit, account.GetBalance());
     }
 
-    [Fact(Skip = "just a demo")]
-    public void Demo()
+ 
+}
+
+
+public class DummyBonusCalculator : ICanCalculateBonusesForBankAccountDeposits
+{
+    public decimal CalculateBonusForDeposit(decimal balance, decimal amountToDeposit)
     {
-        var jcAccount = new BankAccount();
-        var joeyAccount = new BankAccount();
-
-       
-        jcAccount.Deposit(100);
-
-       
-
-        Assert.Equal(5100, jcAccount.GetBalance());
-
-        Assert.Equal(5000, joeyAccount.GetBalance());
+        return 0;
     }
 }
