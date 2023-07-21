@@ -23,6 +23,7 @@ public class StringCalculator
         }
         else
         {
+            // //*\n1*2 => 
             var newLineAt = numbers.IndexOf('\n');
             var delimeter = numbers.Substring(2, newLineAt - 2);
             _delimeters.Add(delimeter);

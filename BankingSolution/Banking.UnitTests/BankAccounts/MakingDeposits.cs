@@ -18,8 +18,7 @@ public class MakingDeposits
         account.Deposit(amountToDeposit); 
 
         // Then - Assert
-        Assert.Equal(openingBalance + amountToDeposit
-            , account.GetBalance());
+        Assert.Equal(5110.2530M, account.GetBalance());
     }
 
     [Fact(Skip = "just a demo")]
