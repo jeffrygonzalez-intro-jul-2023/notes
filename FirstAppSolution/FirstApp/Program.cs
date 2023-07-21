@@ -1,11 +1,14 @@
 ﻿
 using FirstApp.Models;
+using FirstApp.Services;
+using Microsoft.AspNetCore.Mvc;
 
 Console.WriteLine("Starting Up The Api");
 var builder = WebApplication.CreateBuilder(args);
 // Configuration for the API Will go here.
 
-
+builder.Services.AddTransient<IProvideTheSystemStatus, RemoteStatusService>();
+builder.Services.AddTransient<ISystemTime, SystemTime>();
 
 Console.WriteLine("About to Start the Api");
 var app = builder.Build();
@@ -16,9 +19,10 @@ app.MapGet("/sayhi", () =>
     return Results.Ok("Yep! Hello, Good To See You!");
 });
 
-app.MapGet("/status", () =>
+app.MapGet("/status", ([FromServices]IProvideTheSystemStatus _statusGenerator) =>
 {
-    var response = new StatusResponseModel(DateTime.Now, "Looks Good", "Operating Normally");
+    //var response = new StatusResponseModel(DateTime.Now, "Looks Good", "Operating Normally");
+    StatusResponseModel response = _statusGenerator.GetCurrentStatus();
     return Results.Ok(response);
 });
 
