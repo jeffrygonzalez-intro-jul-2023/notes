@@ -4,9 +4,9 @@
   "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
   "elements": [
     {
-      "id": "_Kn8kAaoFfw6B9vWIx5hC",
+      "id": "28BXrPDz693lvyjwEJlSF",
       "type": "rectangle",
-      "x": 327,
+      "x": 330,
       "y": 189,
       "width": 243,
       "height": 191,
@@ -22,12 +22,17 @@
       "roundness": {
         "type": 3
       },
-      "seed": 693204270,
-      "version": 26,
-      "versionNonce": 849674674,
+      "seed": 821300146,
+      "version": 31,
+      "versionNonce": 638978158,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1690317447485,
+      "boundElements": [
+        {
+          "id": "q3aV6ySvuLB8mp5To_h3n",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1690317489419,
       "link": null,
       "locked": false
     },
@@ -132,6 +137,203 @@
       "baseline": 18,
       "containerId": null,
       "originalText": "localhost:4200",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "_Kn8kAaoFfw6B9vWIx5hC",
+      "type": "rectangle",
+      "x": 818,
+      "y": 189,
+      "width": 243,
+      "height": 191,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 693204270,
+      "version": 49,
+      "versionNonce": 1884040942,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1690317478207,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "l92-0rl-aDo0QwwH4FCif",
+      "type": "text",
+      "x": 880,
+      "y": 405,
+      "width": 151.05987548828125,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1236029618,
+      "version": 24,
+      "versionNonce": 1235154670,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "VsaC6CjINEFVS6o90Gxw4",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1690317494511,
+      "link": null,
+      "locked": false,
+      "text": "localhost:8080",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 18,
+      "containerId": null,
+      "originalText": "localhost:8080",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "q3aV6ySvuLB8mp5To_h3n",
+      "type": "arrow",
+      "x": 521,
+      "y": 393,
+      "width": 121,
+      "height": 214,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 398792114,
+      "version": 17,
+      "versionNonce": 669959090,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1690317489419,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          121,
+          214
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "28BXrPDz693lvyjwEJlSF",
+        "focus": -0.04645001531026587,
+        "gap": 13
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "VsaC6CjINEFVS6o90Gxw4",
+      "type": "arrow",
+      "x": 793,
+      "y": 607,
+      "width": 79,
+      "height": 205,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 861325998,
+      "version": 18,
+      "versionNonce": 115027250,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1690317494511,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          79,
+          -205
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": null,
+      "endBinding": {
+        "elementId": "l92-0rl-aDo0QwwH4FCif",
+        "focus": 1.113956915841916,
+        "gap": 8
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "e6gtog8rp4saEaZKd_x2u",
+      "type": "text",
+      "x": 892,
+      "y": 521,
+      "width": 488.899658203125,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1539609454,
+      "version": 154,
+      "versionNonce": 1154398066,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1690317557552,
+      "link": null,
+      "locked": false,
+      "text": "Ask permission: HTTP OPTIONS\n    hi. I'm from localhost:4200,\n    I'd like to GET your todo-list,\n    and I'm sending these headers. Is that cool?",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 93,
+      "containerId": null,
+      "originalText": "Ask permission: HTTP OPTIONS\n    hi. I'm from localhost:4200,\n    I'd like to GET your todo-list,\n    and I'm sending these headers. Is that cool?",
       "lineHeight": 1.25
     }
   ],
